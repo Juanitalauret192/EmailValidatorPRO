@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject>EmailValidatorPRO.App</StartupObject>
+    <AssemblyName>EmailValidatorPRO</AssemblyName>
+    <RootNamespace>EmailValidatorPRO</RootNamespace>
+    <Version>1.1.0</Version>
+    <ApplicationIcon>evpro.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="evpro.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DnsClient" Version="1.7.0" />
+    <PackageReference Include="Serilog" Version="3.1.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.0" />
+    <PackageReference Include="ClosedXML" Version="0.102.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Analyzer Include="c:\Users\pablo\.vscode\extensions\hebel.exxer-rules-vscode-1.0.1\analyzers\ExxerRules.Analyzers.dll" />
+    <Analyzer Include="c:\Users\pablo\.vscode\extensions\hebel.exxer-rules-vscode-1.0.1\analyzers\ExxerRules.CodeFixes.dll" />
+  </ItemGroup>
+</Project>

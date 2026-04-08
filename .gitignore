@@ -1,0 +1,10 @@
+En la raíz del proyecto creá un archivo .gitignore con esto:
+
+bin/
+obj/
+.vs/
+*.user
+*.suo
+publish/
+Output/
+*.log
